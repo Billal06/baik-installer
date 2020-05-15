@@ -21,6 +21,9 @@ else
 fi
 cd micro-baik-lang-8.5
 make
+make install
+rm -rf baik.zip
+rm -rf micro-baik-lang-8.5/
 echo "Done, run now? (Y/n): "
 read pilih;
 if [[ $pilih == "y" || $pilih == "Y" ]]; then
